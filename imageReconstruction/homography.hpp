@@ -382,7 +382,7 @@ Eigen::Matrix <double,3,3> HMinimizeApproximateMSResidualError(Eigen::Matrix<dou
 	    h = h_trial;
 	    Lambda = 0.1*Lambda;
 	    previous_cost = cost;
-	    
+	    std::cout << cost << "\n";
 	    myfile << k << "	"<<  cost << "\n";
 	     
 	    
